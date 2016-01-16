@@ -31,5 +31,8 @@
 		<div class="header-logo">
 			<a href="/"><img src="{{ .Site.Params.logo }}" width="60" height="60"></a>
 		</div>
-		{{ if eq $isHomePage true }}<h2 class="site-title">{{ .Site.Title }}</h2>{{ end }}
+		{{ if eq $isHomePage true }}
+            <h2 class="site-title">{{ .Site.Title }}</h2>
+            <a href="page/about">プロフィール</a>
+        {{ end }}
 	</header>
