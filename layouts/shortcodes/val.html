@@ -1,0 +1,4 @@
+{{ if index .Params 0 | eq "wagePerHour" }}{{ .Site.Params.wagePerHour }}
+{{ else if index .Params 0 | eq "wagePerHourMinimum" }}{{ .Site.Params.wagePerHourMinimum }}
+{{ else if index .Params 0 | eq "wagePerHourPriorConsultation" }}{{ .Site.Params.wagePerHourPriorConsultation }}
+{{ end }}
